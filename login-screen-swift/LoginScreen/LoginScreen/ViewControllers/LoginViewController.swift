@@ -43,7 +43,7 @@ class LoginViewController: UIViewController {
             if let session = session {
                 // Successful log in with Twitter
                 print("signed in as \(session.userName)");
-                let info = "Your Username: \(session.userName) \n User ID: \(session.userID)"
+                let info = "My Username: \(session.userName) \n User ID: \(session.userID)"
                 self.didLogin(method: "Twitter", info: info)
             } else {
                 print("error: \(error?.localizedDescription)");
